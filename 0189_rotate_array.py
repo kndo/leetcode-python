@@ -106,7 +106,7 @@ def main():
 
 
     interesting_cases = [
-        ([1, 2, 3, 4], 10, [3, 4, 1, 2])  # k > len(nums)
+        ([1, 2, 3, 4], 10, [3, 4, 1, 2]),  # k > len(nums)
     ]
 
     for nums, k, ans in interesting_cases:
