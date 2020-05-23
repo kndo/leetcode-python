@@ -93,7 +93,6 @@ def main():
         assert rotate3(list(nums), k) == ans
 
 
-    # Short-circuit cases
     short_circuit_cases = [
         ([1, 2, 3], 0),  # k = 0
         ([], 3),         # len(nums) = 0
@@ -106,7 +105,6 @@ def main():
         assert rotate3(nums, k) == nums
 
 
-    # Interesting cases
     interesting_cases = [
         ([1, 2, 3, 4], 10, [3, 4, 1, 2])  # k > len(nums)
     ]
