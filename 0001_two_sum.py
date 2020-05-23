@@ -70,7 +70,7 @@ def main():
 
     assert two_sum1(nums, target) == ans
     assert two_sum2(nums, target) == ans
-    assert two_sum3(list(nums), target) == ans
+    assert two_sum3(nums, target) == ans
 
 
     short_circuit_cases = [
@@ -91,7 +91,7 @@ def main():
     for nums, target, ans in interesting_cases:
         assert two_sum1(nums, target) == ans
         assert two_sum2(nums, target) == ans
-        assert two_sum3(list(nums), target) == ans
+        assert two_sum3(nums, target) == ans
 
 
 if __name__ == '__main__':
