@@ -35,8 +35,8 @@ def main():
 
 
     corner_cases = [
-        ([], None),   # len(heights) = 0
-        ([8], None),  # len(heights) = 1
+        ([], None),   # len(heights) == 0
+        ([8], None),  # len(heights) == 1
     ]
 
     for heights, ans in corner_cases:
