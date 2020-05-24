@@ -11,6 +11,7 @@ instead and using the following operations:
 - `nums[-1]` to get the last element
 
 While these operations are indeed Pythonic, they don't provide any extra
-functionality as compared to a low-level array. No short-cuts are intended.
+functionality as compared to a low-level array. No shortcuts are intentionally
+made to evade the topic(s) or data structure(s) that the question is testing.
 
 I very much welcome corrections. Thanks.
