@@ -40,7 +40,7 @@ def rotate2(nums, k):
     k = k % n  # In case k > len(nums), prevent redundant rotations
 
     for _ in range(k):
-        last = nums[n-1]  # The extra O(1) space
+        last = nums[-1]  # The extra O(1) space
         for i in range(n):
             # Since we're rotating elements to the right, we should traverse the
             # index from right-to-left to avoid overwriting previously traversed
