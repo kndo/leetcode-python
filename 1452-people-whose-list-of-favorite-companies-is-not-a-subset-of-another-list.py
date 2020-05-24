@@ -11,8 +11,8 @@ def people_indexes(favorite_companies):
     elim_indexes = set()
 
     for i in range(n):
+        u = set(favorite_companies[i])
         for j in range(i+1, n):
-            u = set(favorite_companies[i])
             v = set(favorite_companies[j])
             if u.issubset(v):
                 elim_indexes.add(i)
