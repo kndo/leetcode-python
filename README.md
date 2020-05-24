@@ -1,7 +1,7 @@
 # LeetCode Python Solutions
 This repo contains my Python solutions to LeetCode problems. I try to give ample
 documentation to maximize the pedagogy of my solutions, including time and space
-complexity and how I arrived at them.
+complexity and how I arrive at them.
 
 For expediency, when problems involve an array, I am OK with using a Python list
 instead and using the following operations:
