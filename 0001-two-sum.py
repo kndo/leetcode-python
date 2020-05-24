@@ -23,7 +23,7 @@ def two_sum2(nums, target):
     Can assume that each input has exactly one solution.
 
     Time: O(n) -- loop through the array once; past dict get/set is O(1)
-    Space: O(n) -- might have to store all n elements in past dict
+    Space: O(n) -- might have to store n-1 elements in past dict for a solution
     """
     if len(nums) < 2:
         return [None, None]
