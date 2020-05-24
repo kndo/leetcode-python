@@ -7,20 +7,25 @@ def people_indexes(favorite_companies):
     Time: O(n^2) -- nested loops to compare current list with all other lists
     Space: O(n) -- all lists may be disjoint with one another
     """
+    n = len(favorite_companies)
     elim_indexes = set()
 
-    for i, u in enumerate(favorite_companies):
-        for j, v in enumerate(favorite_companies):
-            if j != i:  # Exclude self-comparison
-                if set(u).issubset(set(v)):
-                    elim_indexes.add(i)
+    for i in range(n):
+        for j in range(i+1, n):
+            u = set(favorite_companies[i])
+            v = set(favorite_companies[j])
+            if u.issubset(v):
+                elim_indexes.add(i)
+            if v.issubset(u):
+                elim_indexes.add(j)
 
-    all_indexes = set(range(len(favorite_companies)))
+    all_indexes = set(range(n))
     return list(all_indexes - elim_indexes)
 
 
 def main():
     example_cases = [
+        # Example 1
         (
             [
                 ['leetcode', 'google', 'facebook'],
@@ -29,7 +34,9 @@ def main():
                 ['google'],
                 ['amazon'],
             ],
-            [0, 1, 4]),
+            [0, 1, 4]
+        ),
+        # Example 2
         (
             [
                 ['leetcode', 'google', 'facebook'],
@@ -38,6 +45,7 @@ def main():
             ],
             [0, 1]
         ),
+        # Example 3
         (
             [
                 ['leetcode'],
